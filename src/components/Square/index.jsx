@@ -1,14 +1,10 @@
-import CapsLock from '../CapsLock'
-
-function Square(props) {
-  const titulo = `${props.titulo} DevInHouse`
-  
+function Square({
+  background
+}) {
   return (
     <div>
-      <CapsLock texto={titulo}/>
       <div 
-        style={{background: props.background, 
-          width: props.largura }}
+        style={{background: background }}
         className="square"></div>
     </div>
   )

@@ -1,23 +1,21 @@
 import './App.css'
-import Square from './components/Square'
-import Circle from './components/Circle'
+import Figure from './components/Figure'
 
 function App() {
 
   return (
     <>
-      <Square titulo="Quadrado" />
-      <Square 
-        background="gray" 
-        titulo="Quadrado cinza"/>
-      <Square 
-        titulo="Quadrado com largura"
-        largura={100}
-        />
-      <Circle titulo="Circulo"/>  
+      <Figure type="square" title="Quadrado"
+        bg="yellow">Texto</Figure>
 
-      {/* <CapsLock texto="Me deixe em Caps Lock" /> */}
+      <Figure type="triangle" title="Triangulo"
+        bg="red"/>
 
+      <Figure type="circle" title="Circulo"
+        bg="blue"/>
+      
+      <Figure type="rectangle" title="Retangulo"
+        bg="black"/>
     </>
   ) 
 }

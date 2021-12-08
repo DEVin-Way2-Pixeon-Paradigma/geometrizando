@@ -1,14 +1,8 @@
-const circle = ({ background, titulo }) => {
+const Circle = ({ background, titulo }) => {
 
-  return (
-    <div>
-      <span>{titulo}</span>
-      <div 
+  return <div 
         style={{background: background}}
-        className="circle"></div>
-    </div>
-    
-  )
+        className="circle" />
 }
 
-export default circle
+export default Circle
