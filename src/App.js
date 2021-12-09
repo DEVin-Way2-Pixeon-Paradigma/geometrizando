@@ -5,8 +5,8 @@ function App() {
 
   return (
     <>
-      <Figure type="square" title="Quadrado"
-        bg="yellow">Texto</Figure>
+      <Figure type="square" title="Quadrado" 
+        />
 
       <Figure type="triangle" title="Triangulo"
         bg="red"/>
@@ -15,7 +15,7 @@ function App() {
         bg="blue"/>
       
       <Figure type="rectangle" title="Retangulo"
-        bg="black"/>
+        bg="black"/>  
     </>
   ) 
 }

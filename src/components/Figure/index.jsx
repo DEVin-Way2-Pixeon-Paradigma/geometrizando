@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 import Square from '../Square'
 import Triangle from '../Triangle'
 import Circle from '../Circle'
@@ -31,6 +33,12 @@ const Figure = ({
     </>
   )
 
+}
+
+Figure.propTypes = {
+  type: PropTypes.oneOf(['triangle', 'square', 'circle', 'rectangle']),
+  title: PropTypes.string.isRequired,
+  bg: PropTypes.string
 }
 
 export default Figure
